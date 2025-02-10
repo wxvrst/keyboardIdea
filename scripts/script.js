@@ -2,7 +2,7 @@ function sleep (time) {
     return new Promise((resolve) => setTimeout(resolve, time));
 }
 function playSound() {
-    var song = document.getElementById("sound");
+    var song =           document.getElementById("sound");
     song.volume = 1;
     song.play();
 }
