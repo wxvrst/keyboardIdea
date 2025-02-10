@@ -9,7 +9,7 @@ function playSound() {
 document.addEventListener("keypress", (event) => {
     let keyName = event.key;
     if(event.code==="Space") {keyName="space";}
-    let element = document.querySelector(`.${keyName}`);
+    let element = document.querySelector(`.${keyName.toLowerCase()}`);
     let input = document.querySelector(`#input`);
     if(keyName==="space"){input.value +=" ";}
     else {input.value +=keyName;}
@@ -25,4 +25,10 @@ document.addEventListener("keydown", (event) => {
     let key = event.key;
     let input = document.querySelector(`#input`);
     if(key === "Backspace"){input.value= input.value.substring(0,input.value.length-1);playSound();}
+    if(key === "["){input.value+="[";playSound();}
+    if(key === "]"){input.value+="]";playSound();}
+    if(key === ";"){input.value+=";";playSound();}
+    if(key === "'"){input.value+="'";playSound();}
+    if(key === ","){input.value+=",";playSound();}
+    if(key === "."){input.value+=".";playSound();}
 })

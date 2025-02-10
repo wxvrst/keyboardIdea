@@ -50,6 +50,13 @@ button.btn {
     transition: transform 0.15s;
     transform-style: preserve-3d;
 }
+span.rus{
+    position: absolute;
+    font-size: 0.8rem;
+    color: #8c7b72;
+    top: 20%;
+    right: 20%;
+}
 button.btn::before {
     position: absolute;
     content: "";
@@ -99,3 +106,22 @@ button.btn.active::before {
 .space{
     width:360px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
