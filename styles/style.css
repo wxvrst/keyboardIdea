@@ -102,14 +102,15 @@ button.btn.active::before {
     height:48px;
     width:480px;
     padding:8px;
+    z-index: 5;
 }
 .space{
     width:360px;
 }
 .title{
     position:absolute;
-    top:10%;
-    font-size:2rem;
+    top:8%;
+    width:360px;
 }
 
 
