@@ -7,7 +7,7 @@ document.addEventListener("keypress", (event) => {
     let element = document.querySelector(`.${keyName.toLowerCase()}`);
     let input = document.querySelector(`#input`);
     if(keyName==="space"){input.value +=" ";}
-    else if(keyName==="Enter" && input.value==="dancing cow"){window.location.replace("https://rutube.ru/video/e8e52a1c012310bd2c0c3e4ea4f4871d/");}
+    else if(keyName==="Enter" && input.value.includes("dancing cow")){window.location.replace("https://rutube.ru/video/e8e52a1c012310bd2c0c3e4ea4f4871d/");}
     else {input.value +=keyName;}
     element.classList.add("hover");
     element.classList.add("active");
